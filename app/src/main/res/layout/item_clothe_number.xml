@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl"
+    android:layout_marginTop="16dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_itemClotheNumber_clotheIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_shirt_blue"/>
+
+    <TextView
+        android:id="@+id/tv_itemClotheNumber_clotheNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x3"
+        android:layout_toEndOf="@id/iv_itemClotheNumber_clotheIcon"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/zipJetColorDark"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_itemClotheNumber_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30,000 تومان"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

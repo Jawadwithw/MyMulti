@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:contentPadding="16dp"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#E8E8E8">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_itemLaundryComment_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="داوود افتخاری"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/tv_itemLaundryComment_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1399/04/10"/>
+
+        <RatingBar
+            android:id="@+id/rb_itemLaundryComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:theme="@style/ratingBarCustom"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_below="@id/tv_itemLaundryComment_userName"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_itemLaundryComment_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="کارشون عالیه"
+            android:layout_below="@id/rb_itemLaundryComment"
+            android:layoutDirection="rtl"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

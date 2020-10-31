@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:theme="@style/colorAccentZipJetGreen"
+            android:layout_height="wrap_content"
+            android:orientation = "vertical"
+            android:layoutDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/what_day"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_chooseOrderTime_day"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/what_time"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_chooseOrderTime_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/extra_cost"
+                android:layout_marginTop="16dp"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_chooseOrderTime_deliveryExtraCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10000 تومان"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:textColor="@color/zipJetColorPrimary"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_chooseOrderTime_chooseLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_chooseOrderTimeFragment_mapPin"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginStart="16dp"
+                    app:cardBackgroundColor="#E8E8E8"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_map_pin"
+                        app:tint="@color/zipJetColorDark"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_chooseOrderTime_chooseLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/choose_address_on_map"
+                    android:layout_toEndOf="@id/cv_chooseOrderTimeFragment_mapPin"
+                    android:layout_marginStart="16dp"
+                    android:textStyle="bold"
+                    android:layout_alignTop="@id/cv_chooseOrderTimeFragment_mapPin"
+                    android:layout_alignBottom="@id/cv_chooseOrderTimeFragment_mapPin"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:contentPadding="16dp">
+
+                <EditText
+                    android:id="@+id/et_chooseOrderTime_userAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layoutDirection="rtl"
+                    android:backgroundTint="@color/white"
+                    android:textSize="14sp"
+                    android:gravity="top|start"
+                    android:background="@android:color/white"
+                    android:hint="@string/enter_your_address"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cv_chooseOrderTimeFragment_backArrow"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="match_parent"
+                    android:theme="@style/Theme.MaterialComponents.Light"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="10dp"
+                    app:strokeColor="@color/zipJetColorPrimary"
+                    app:strokeWidth="1dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:tint="@color/zipJetColorPrimary"
+                        app:srcCompat="@drawable/ic_arrow_right"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <Button
+                    android:id="@+id/btn_chooseOrderTime_next"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="@drawable/rounded_btn"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/submit_order"
+                    android:backgroundTint="@color/zipJetColorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"/>
+                <!-- TODO : set corner radius to buttons -->
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

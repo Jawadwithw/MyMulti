@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/standard_margin"
+    android:layoutDirection="rtl"
+
+    app:cardCornerRadius="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/standard_margin">
+
+            <com.rishabhharit.roundedimageview.RoundedImageView
+                android:id="@+id/iv_order_logo"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight=".3"
+                android:adjustViewBounds="true"
+                app:cornerRadius="20dp"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_order_type"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/standard_margin"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/zipJetColorDark"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="تست" />
+                <TextView
+                    android:id="@+id/tv_captain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/standard_margin"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    tools:text="تست - تست - تست" />
+                <TextView
+                    android:id="@+id/tv_order_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/standard_margin"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+
+                    tools:text="تست - تست - تست" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                >
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/zipJetColorDark"
+                    android:layout_gravity="end"
+                    android:gravity="left|center"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    tools:text="۴.۷"
+                    tools:ignore="RtlHardcoded" />
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/zipJetColorDark"
+                    android:layout_gravity="end"
+                    android:gravity="left|center"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    tools:text="۴.۷"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemLaundry_rootView"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:layout_margin="16dp">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_item_laundry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_itemLaundry_laundryImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.rishabhharit.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_itemLaundry_laundryImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/selector_loading2"
+                    app:cornerRadius="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_itemLaundry_laundryRate"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/zipJetColorDark"
+                    android:textSize="@dimen/normal_font_size"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="@dimen/standard_margin"
+                    tools:text="۴.۷"
+                    android:padding="@dimen/standard_margin"
+                    android:background="@drawable/selector_loading"
+                    android:gravity="left"
+                     />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_margin"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_itemLaundry_laundryAvatar"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/selector_loading"
+                    app:civ_border_color="@color/zipJetColorPrimary"
+                    app:civ_border_width="3dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_itemLaundry_laundryName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/standard_margin"
+                        android:background="@drawable/selector_loading"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:text="خشکشوی مهروز" />
+
+                    <TextView
+                        android:id="@+id/tv_itemLaundry_laundryAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_loading"
+                        android:maxLength="35"
+                        tools:text="تهران_سعادت آباد_میدان کاج_بین خ... نهم و هفتم_ساختمان میلاد کاج _ طبقه دوم _ واحد  _ 206" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+</RelativeLayout>

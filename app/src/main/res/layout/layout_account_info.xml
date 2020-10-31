@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/more_relative"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="@android:color/transparent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:visibility="visible"
+                android:id="@+id/iv_profile_menu"
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_male"
+                android:padding="@dimen/standard_margin"
+                tools:ignore="VectorDrawableCompat" />
+            <LinearLayout
+                android:visibility="visible"
+                android:layout_width="0dp"
+                android:layout_weight=".6"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/more_fragment_texts"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:textDirection="rtl"
+                 />
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    style="@style/more_fragment_texts"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:textDirection="rtl"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_edit_profile"
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_profile"
+                android:padding="10dp"
+                android:layout_gravity="left"
+                android:layoutDirection="ltr"
+                android:alpha=".5"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_support"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/selector_btn_previous"
+        android:layout_margin="@dimen/standard_margin_X2"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/standard_margin_X2"
+        >
+        <TextView
+            android:id="@+id/tv_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_call_support"
+            style="@style/tv_large_style"
+            app:drawableStartCompat="@drawable/ic_phone"
+            android:padding="@dimen/standard_margin"/>
+
+        <TextView
+            android:id="@+id/tv_telegram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_telegram"
+            style="@style/tv_large_style"
+            app:drawableStartCompat="@drawable/ic_telegram"
+            android:padding="@dimen/standard_margin"/>
+    </LinearLayout>
+
+</RelativeLayout>

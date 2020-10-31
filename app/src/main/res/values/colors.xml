@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EE3131</color>
+    <color name="colorPrimaryDark">#EE3131</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="zipJetColorPrimary">#0EAF6A</color>
+    <color name="zipJetColorDark">#474747</color>
+    <color name="zipJetColorBronze">#BF5327</color>
+    <color name="zipJetColorSilver">#ADACB2</color>
+    <color name="zipJetColorGold">#FDBF00</color>
+
+    <color name="captainBikeColorPrimary">#6751A2</color>
+
+    <!--date and time picker theme-->
+    <color name="mdtp_accent_color">#D81B60</color>
+    <color name="mdtp_accent_color_dark">#D81B60</color>
+
+    <color name="black">#000</color>
+    <color name="color_button_default">#FFA000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="color_blue">#0C26A8</color>
+    <color name="background_btn">#0098C8</color>
+
+
+    <color name="green">#F32EBB31</color>
+    <color name="toolbar_bg">#00ADEF</color>
+    <color name="sub_cats_bg">#2A2E43</color>
+
+    <color name="orange">#FFA000</color>
+    <color name="features_bg">#47BDDD</color>
+
+
+    <color name="btn_next_color">#EE3131</color>
+    <color name="btn_confirm_main">#63C0CF</color>
+    <color name="btn_next_color_border">#707070</color>
+    <color name="btn_previous_color">#EEEEEE</color>
+
+    <color name="toolbar_title_color">#474747</color>
+    <color name="wallet_color">#03A9F4</color>
+
+
+    <!--night_mode_starts-->
+
+    <!--night_mode_ends-->
+
+
+</resources>

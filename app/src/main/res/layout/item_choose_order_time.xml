@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv_itemChooseOrderTime_container"
+    android:layout_width="150dp"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="30dp"
+    app:contentPadding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_itemChooseOrderTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 روزه"
+            android:textColor="@color/zipJetColorDark"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

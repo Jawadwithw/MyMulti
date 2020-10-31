@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/clothesCategories"
+        android:id="@+id/item_clothesCategoryMenu_category"/>
+
+    <item
+        android:title="@string/suit"
+        android:id="@+id/item_clothesCategoryMenu_suit"/>
+
+    <item
+        android:title="@string/special_suit"
+        android:id="@+id/item_clothesCategoryMenu_specialSuit"/>
+
+    <item
+        android:title="@string/pant_shirt"
+        android:id="@+id/item_clothesCategoryMenu_pant_shirt"/>
+
+    <item
+        android:title="@string/ordinaryCoat"
+        android:id="@+id/item_clothesCategoryMenu_ordinaryCoat"/>
+
+    <item
+        android:title="@string/travelBlankets"
+        android:id="@+id/item_clothesCategoryMenu_travelBlankets"/>
+
+    <item
+        android:title="@string/singleBlanket"
+        android:id="@+id/item_clothesCategoryMenu_singleBlanket"/>
+
+    <item
+        android:title="@string/doubleBlanket"
+        android:id="@+id/item_clothesCategoryMenu_doubleBlanket"/>
+
+    <item
+        android:title="@string/singleBedspread"
+        android:id="@+id/item_clothesCategoryMenu_singleBedspread"/>
+
+    <item
+        android:title="@string/doubleBedspread"
+        android:id="@+id/item_clothesCategoryMenu_doubleBedspread"/>
+
+    <item
+        android:title="@string/tourCurtains"
+        android:id="@+id/item_clothesCategoryMenu_tourCurtains"/>
+
+    <item
+        android:title="@string/jacket"
+        android:id="@+id/item_clothesCategoryMenu_jacket"/>
+
+    <item
+        android:title="@string/dyeing"
+        android:id="@+id/item_clothesCategoryMenu_dyeing"/>
+
+</menu>

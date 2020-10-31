@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/personal_info_fragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_name"
+            android:background="@drawable/selector_btn_previous"
+            android:padding="@dimen/standard_margin"
+            style="@style/input_text_style"
+            android:layout_marginBottom="@dimen/standard_margin"/>
+        <EditText
+            android:id="@+id/et_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_last_name"
+            android:background="@drawable/selector_btn_previous"
+            android:padding="@dimen/standard_margin"
+            style="@style/input_text_style"
+            android:layout_marginBottom="@dimen/standard_margin"/>
+        <AutoCompleteTextView
+            android:id="@+id/et_brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_carBrand"
+            android:background="@drawable/selector_btn_previous"
+            android:padding="@dimen/standard_margin"
+            android:completionThreshold="1"
+            android:layout_marginBottom="@dimen/standard_margin"
+            style="@style/input_text_style"
+            android:completionHint="@string/et_carBrand"/>
+        <AutoCompleteTextView
+            android:id="@+id/et_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_carModel"
+            android:completionThreshold="1"
+            android:background="@drawable/selector_btn_previous"
+            android:padding="@dimen/standard_margin"
+            style="@style/input_text_style"
+            android:completionHint="@string/et_carModel"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

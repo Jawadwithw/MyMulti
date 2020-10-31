@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ZipJet.LaundryDetailsContract.LaundryDetailsActivity">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_laundryDetailsActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="ltr">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        tools:text="خشکشویی مهروز"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_laundryDetailsActivity_backArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        app:srcCompat="@drawable/ic_arrow_back" />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_slider_container"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="20dp" >
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imageSlider_laundryDetailsActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:sliderIndicatorGravity="end|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_laundryDetailsActivity_detailsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv_slider_container"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp"
+                app:contentPadding="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_laundryDetailsActivity_laundryAvatar"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/man" />
+
+                    <TextView
+                        android:id="@+id/tv_laundryDetailsActivity_laundryName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_toStartOf="@id/iv_laundryDetailsActivity_laundryAvatar"
+                        android:text="خشکشویی مهروز"
+                        android:textColor="@color/zipJetColorDark"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_laundryDetailsActivity_callIcon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/iv_laundryDetailsActivity_laundryAvatar"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="32dp"
+                        app:cardBackgroundColor="#E8E8E8"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_call"
+                            app:tint="@color/zipJetColorDark" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tv_laundryDetailsActivity_phoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/cv_laundryDetailsActivity_callIcon"
+                        android:layout_alignBottom="@id/cv_laundryDetailsActivity_callIcon"
+                        android:layout_marginEnd="8dp"
+                        android:layout_toStartOf="@id/cv_laundryDetailsActivity_callIcon"
+                        android:gravity="center_vertical"
+                        android:text="+989304154108"
+                        android:textColor="@color/zipJetColorDark"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_laundryDetailsActivity_callArrow"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignTop="@id/cv_laundryDetailsActivity_callIcon"
+                        android:layout_alignBottom="@id/cv_laundryDetailsActivity_callIcon"
+                        app:srcCompat="@drawable/ic_arrow_left_flat"
+                        app:tint="@color/zipJetColorPrimary" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_laundryDetailsActivity_mapIcon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/cv_laundryDetailsActivity_callIcon"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="16dp"
+                        app:cardBackgroundColor="#E8E8E8"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="0dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_map_pin"
+                            app:tint="@color/zipJetColorDark" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tv_laundryDetailsActivity_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/cv_laundryDetailsActivity_mapIcon"
+                        android:layout_alignBottom="@id/cv_laundryDetailsActivity_mapIcon"
+                        android:layout_marginEnd="8dp"
+                        android:layout_toStartOf="@id/cv_laundryDetailsActivity_mapIcon"
+                        android:gravity="center_vertical"
+                        tools:text="میدان کاج_بین خ نهم و هفتم_ ساختمان \n میلاد کاج _ طبقه دوم _ واحد 206"
+                        android:textColor="@color/zipJetColorDark" />
+
+                    <ImageView
+                        android:id="@+id/iv_laundryDetailsActivity_mapArrow"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignTop="@id/cv_laundryDetailsActivity_mapIcon"
+                        android:layout_alignBottom="@id/cv_laundryDetailsActivity_mapIcon"
+                        app:srcCompat="@drawable/ic_arrow_left_flat"
+                        app:tint="@color/zipJetColorPrimary" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_laundryDetailsActivity_submitRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv_laundryDetailsActivity_detailsContainer"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/submitRate"
+                android:textSize="20sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_laundryDetailsActivity_rateBar"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#E8E8E8"
+                android:layout_below="@id/tv_laundryDetailsActivity_submitRate"
+                android:layout_alignParentRight="true"
+                app:cardElevation="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp" >
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_laundryDetailsActivity_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="26sp"
+                        android:text="4.5"
+                        android:textColor="@color/zipJetColorPrimary"
+                        />
+
+                    <TextView
+                        android:layout_below="@id/tv_laundryDetailsActivity_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="از 5"
+                        android:layout_alignLeft="@id/tv_laundryDetailsActivity_rate"
+                        android:layout_alignRight="@id/tv_laundryDetailsActivity_rate"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/iv_comment_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_plus"
+                android:padding="@dimen/standard_margin_X2"
+                android:layout_below="@+id/tv_laundryDetailsActivity_submitRate"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_laundryDetailsActivity_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="64dp"
+                android:layout_below="@id/cv_laundryDetailsActivity_rateBar"
+                android:layout_marginTop="24dp"/>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_zipJetHomeActivity_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/colorAccentZipJetGreen"
+        app:backgroundTint="@color/zipJetColorPrimary"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:layoutDirection="rtl"
+        app:iconTint="@color/white"
+        android:textColor="@color/white"
+        app:strokeWidth="0dp"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|right"
+        android:text="@string/send_customer"
+        app:icon="@drawable/ic_baseline_send"
+        tools:ignore="RtlHardcoded" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

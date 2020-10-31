@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZipJet.HomeContract.HomeActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_zipJetHomeActivity_zipJetLogo"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/ic_zepjet" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_zipJetHomeActivity_userInfoContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_zipJetHomeActivity_zipJetLogo"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:contentPadding="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_zipJetHomeActivity_userAvatar"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/man" />
+
+                    <TextView
+                        android:id="@+id/tv_zipJetHomeActivity_userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_toStartOf="@id/iv_zipJetHomeActivity_userAvatar"
+                        android:text="وحید عباسی"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_zipJetHomeActivity_phoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_zipJetHomeActivity_userName"
+                        android:layout_marginTop="-1dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_toStartOf="@id/iv_zipJetHomeActivity_userAvatar"
+                        android:text="09304154108" />
+
+                    <ImageView
+                        android:id="@+id/iv_zipJetHomeActivity_walletIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_zipJetHomeActivity_userName"
+                        app:srcCompat="@drawable/ic_wallet"
+                        app:tint="@color/zipJetColorPrimary" />
+
+                    <TextView
+                        android:id="@+id/tv_zipJetHomeActivity_userBudget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_zipJetHomeActivity_userName"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@id/iv_zipJetHomeActivity_walletIcon"
+                        android:text="5,000 تومان"
+                        android:textColor="@color/zipJetColorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/iv_zipJetHomeActivity_mapPinIcon"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_below="@id/tv_zipJetHomeActivity_phoneNumber"
+                        android:layout_alignEnd="@id/tv_zipJetHomeActivity_phoneNumber"
+                        android:layout_marginTop="12dp"
+                        app:srcCompat="@drawable/ic_map_pin" />
+
+                    <TextView
+                        android:id="@+id/tv_zipJetHomeActivity_userAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_zipJetHomeActivity_phoneNumber"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_toStartOf="@id/iv_zipJetHomeActivity_mapPinIcon"
+                        android:maxLength="35"
+                        android:text="تهران_سعادت آباد_میدان کاج_بین خ نهم و هفتم_ساختمان میلاد کاج _ طبقه دوم _ واحد  _ 206" />
+
+                    <Button
+                        android:id="@+id/btn_zipJetHomeActivity_myOrders"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_zipJetHomeActivity_userAddress"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/outline_btn_background"
+                        android:text="@string/my_orders"
+                        android:textColor="@color/zipJetColorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/ll_zipJetHomeActivity_servicesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv_zipJetHomeActivity_userInfoContainer"
+                android:weightSum="3">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_zipJetHomeActivity_bronzeServiceContainer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="20dp"
+                    app:contentPadding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_zipJetHomeActivity_bronzeZipJetIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:srcCompat="@drawable/ic_zepjet_small"
+                            app:tint="@color/zipJetColorBronze"/>
+
+                        <TextView
+                            android:id="@+id/tv_zipJetHomeActivity_bronzeDiscountPercent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="%10 \n تخفیف"
+                            android:textColor="@color/zipJetColorBronze"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal"/>
+
+                        <TextView
+                            android:id="@+id/tv_zipJetHomeActivity_bronzeServicesTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bronze_services"
+                            android:layout_marginTop="4dp"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_zipJetHomeActivity_silverServiceContainer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    app:cardElevation="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="20dp"
+                    app:contentPadding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_zipJetHomeActivity_silverZipJetIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:srcCompat="@drawable/ic_zepjet_small"
+                            app:tint="@color/zipJetColorSilver"/>
+
+                        <TextView
+                            android:id="@+id/tv_zipJetHomeActivity_silverDiscountPercent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="%20 \n تخفیف"
+                            android:textColor="@color/zipJetColorSilver"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal"/>
+
+                        <TextView
+                            android:id="@+id/tv_zipJetHomeActivity_silverServicesTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/silver_services"
+                            android:textSize="12sp"
+                            android:layout_marginTop="4dp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_zipJetHomeActivity_goldServiceContainer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:cardCornerRadius="20dp"
+                    app:contentPadding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_zipJetHomeActivity_goldZipJetIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:srcCompat="@drawable/ic_zepjet_small"
+                            app:tint="@color/zipJetColorGold"/>
+
+                        <TextView
+                            android:id="@+id/tv_zipJetHomeActivity_goldDiscountPercent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="%30 \n تخفیف"
+                            android:textColor="@color/zipJetColorGold"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal"/>
+
+                        <TextView
+                            android:id="@+id/tv_zipJetHomeActivity_goldServicesTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gold_services"
+                            android:textSize="12sp"
+                            android:layout_marginTop="4dp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_zipJetHomeActivity_laundriesDirectory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/ll_zipJetHomeActivity_servicesContainer"
+                android:layout_marginTop="24dp"
+                android:textStyle="bold"
+                android:text="@string/laundries_directory"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_zipJetHomeActivity_showOnMapButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/show_on_map"
+                android:layout_below="@id/ll_zipJetHomeActivity_servicesContainer"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/zipJetColorPrimary"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_zipJetHomeActivity_laundriesDirectory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="64dp"
+                android:layout_below="@id/tv_zipJetHomeActivity_laundriesDirectory"/>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_zipJetHomeActivity_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/colorAccentZipJetGreen"
+        app:backgroundTint="@color/zipJetColorPrimary"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:layoutDirection="rtl"
+        app:iconTint="@color/white"
+        android:textColor="@color/white"
+        app:strokeWidth="0dp"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|right"
+        android:text="@string/order"
+        app:icon="@drawable/ic_baseline_add_24"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    app:cardBackgroundColor="@android:color/white"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv_itemLaundryWhiteBackground_root"
+    app:contentPadding="8dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_itemLaundryWhiteBackground_laundryImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.rishabhharit.roundedimageview.RoundedImageView
+                android:id="@+id/iv_itemLaundryWhiteBackground_laundryImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/man"
+                app:cornerRadius="20dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_itemLaundryWhiteBackground_laundryRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:contentPadding="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_itemLaundryWhiteBackground_laundryImageStar"
+                        android:layout_width="15dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_baseline_star_24"
+                        app:tint="@color/zipJetColorGold" />
+
+                    <TextView
+                        android:id="@+id/tv_itemLaundryWhiteBackground_laundryRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_toEndOf="@id/iv_itemLaundryWhiteBackground_laundryImageStar"
+                        android:text="4.1"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_itemLaundryWhiteBackground_laundryDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="20dp"
+                android:layout_below="@id/cv_itemLaundryWhiteBackground_laundryRate"
+                app:cardElevation="0dp"
+                app:contentPadding="8dp">
+
+                <TextView
+                    android:id="@+id/tv_itemLaundryWhiteBackground_laundryDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@id/iv_itemLaundryWhiteBackground_laundryImageStar"
+                    android:text="8 کیلومتر"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_itemLaundryWhiteBackground_laundryAvatar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/rl_itemLaundryWhiteBackground_laundryImage"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/man"
+            app:civ_border_color="@color/zipJetColorPrimary"
+            app:civ_border_width="3dp" />
+
+        <TextView
+            android:id="@+id/tv_itemLaundryWhiteBackground_laundryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_itemLaundryWhiteBackground_laundryImage"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@id/iv_itemLaundryWhiteBackground_laundryAvatar"
+            android:text="خشکشوی مهروز"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_itemLaundryWhiteBackground_laundryAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_itemLaundryWhiteBackground_laundryName"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@id/iv_itemLaundryWhiteBackground_laundryAvatar"
+            android:maxLength="35"
+            android:text="تهران_سعادت آباد_میدان کاج_بین خ... نهم و هفتم_ساختمان میلاد کاج _ طبقه دوم _ واحد  _ 206"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

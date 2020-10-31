@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="16dp"
+    android:layoutDirection="rtl"
+    app:cardCornerRadius="20dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_itemDoingOrder_orderInformation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.rishabhharit.roundedimageview.RoundedImageView
+                android:id="@+id/iv_itemDoingOrder_orderImage"
+                android:layout_width="80dp"
+                app:cornerRadius="20dp"
+                tools:src="@drawable/man"
+                android:adjustViewBounds="true"
+                android:layout_height="80dp"/>
+
+            <TextView
+                android:id="@+id/tv_itemDoingOrder_orderTitle"
+                android:layout_width="wrap_content"
+                tools:text="تست"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/zipJetColorDark"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/iv_itemDoingOrder_orderImage"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_itemDoingOrder_services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تست - تست - تست"
+                android:layout_below="@id/tv_itemDoingOrder_orderTitle"
+                android:layout_toEndOf="@id/iv_itemDoingOrder_orderImage"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_itemDoingOrder_stateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textSize="12sp"
+                android:textColor="#00B7BD"
+                android:textStyle="bold"
+                tools:text="انجام شده"
+                android:background="@drawable/selector_btn_next"
+                android:backgroundTint="#D1EDE1"/>
+
+            <TextView
+                android:id="@+id/tv_itemDoingOrder_orderCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/tv_itemDoingOrder_stateText"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:textColor="@color/zipJetColorPrimary"
+                android:textStyle="bold"
+                tools:text="7,000 تومان"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_itemDoingOrder_deliveryInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/itemDoingOrder_breakLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="#BABABA"/>
+
+            <com.rishabhharit.roundedimageview.RoundedImageView
+                android:id="@+id/iv_itemDoingOrder_deliverAvatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/itemDoingOrder_breakLine"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:cornerRadius="10dp"
+                tools:src="@drawable/man"/>
+
+            <TextView
+                android:id="@+id/tv_itemDoingOrder_deliverName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="تست"
+                android:layout_below="@id/itemDoingOrder_breakLine"
+                android:layout_toEndOf="@id/iv_itemDoingOrder_deliverAvatar"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_itemDoingOrder_deliveryCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="5,000 تومان"
+                android:layout_below="@id/itemDoingOrder_breakLine"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_itemDoingOrder_deliverPlateNumberTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plateNumber"
+                android:textSize="12sp"
+                android:textColor="#A1A1A1"
+                android:layout_below="@id/tv_itemDoingOrder_deliverName"
+                android:layout_toEndOf="@id/iv_itemDoingOrder_deliverAvatar"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_itemDoingOrder_deliveryTypeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/postType"
+                android:textSize="12sp"
+                android:textColor="#A1A1A1"
+                android:layout_below="@id/tv_itemDoingOrder_deliverPlateNumberTitle"
+                android:layout_toEndOf="@id/iv_itemDoingOrder_deliverAvatar"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_itemDoingOrder_deliverPlateNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="11 11122"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/zipJetColorDark"
+                android:layout_below="@id/tv_itemDoingOrder_deliverName"
+                android:layout_toEndOf="@id/tv_itemDoingOrder_deliverPlateNumberTitle"/>
+
+            <TextView
+                android:id="@+id/tv_itemDoingOrder_deliveryType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="پست معمولی"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/zipJetColorDark"
+                android:layout_below="@id/tv_itemDoingOrder_deliverPlateNumberTitle"
+                android:layout_toEndOf="@id/tv_itemDoingOrder_deliveryTypeTitle"/>
+
+            <Button
+                android:id="@+id/btn_itemDoingOrder_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/call"
+                android:textColor="@color/zipJetColorPrimary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="@drawable/outline_btn_background"
+                android:layout_below="@id/tv_itemDoingOrder_deliveryTypeTitle"
+                android:layout_marginTop="16dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

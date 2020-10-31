@@ -1,0 +1,254 @@
+<resources>
+    <string name="app_name">The2806</string>
+
+    <!--menu_titles-->
+    <string name="btn_next">مرحله بعد</string>
+    <string name="btn_previous">قبلی</string>
+    <string name="btn_watch_order">پیگیری سفارش</string>
+    <!--personalInfo-->
+    <string name="et_name">نام</string>
+    <string name="et_full_name">نام کامل</string>
+    <string name="et_last_name">نام خانوادگی</string>
+    <string name="et_carModel">نام مدل خودرو</string>
+    <string name="et_carBrand">برند خودرو</string>
+
+    <!--problemInfo-->
+
+    <string name="et_select_problem">نوع مشکل را انتخاب کنید*</string>
+    <string name="tv_problem_type">شرح مشکل</string>
+    <string name="tv_problem_dec">توضیحات بیشتر...</string>
+    <!--order_activity-->
+    <string name="title_orders">ثبت سفارش</string>
+    <!--order_activity-->
+    <string name="captan_car">کاپیتان کار</string>
+    <string name="capitan_fruit">کاپیتان فروت</string>
+    <string name="zip_jet">زیپ جت</string>
+    <string name="capitan_bike">کاپیتان بایک</string>
+    <string name="pending">در حال بررسی</string>
+    <string name="arrival">درحال ارسال کاپیتان</string>
+    <string name="done">انجام شد</string>
+
+    <string name="fanni">خدمات فنی</string>
+    <string name="lux">خدمات لوکس</string>
+    <string name="emdad">امداد فوری</string>
+
+
+    <string-array name="problems">
+        <item>خدمات فنی</item>
+        <item>خدمات لوکس</item>
+        <item>امداد فوری</item>
+    </string-array>
+
+    <string-array name="myMultiTypes">
+        <item>@string/captan_car</item>
+        <item>@string/zip_jet</item>
+        <item>@string/capitan_bike</item>
+        <item>@string/capitan_fruit</item>
+    </string-array>
+    <!--dateInfo-->
+    <string name="tv_date">کاپیتان چه روزی مراجعه کند؟</string>
+    <string name="tv_time">زمان مراجعه کاپیتان*</string>
+
+    <!--adress-->
+    <string name="btn_type_address">وارد کردن آدرس</string>
+    <string name="btn_map">انتخاب از روی نقشه</string>
+    <string name="et_address">آدرس*</string>
+    <string name="et_street">خیابان</string>
+    <string name="et_extra_address">آدرس اضافه</string>
+    <string name="et_state">استان</string>
+    <string name="et_city">شهر</string>
+    <string name="et_postal_code">کدپستی</string>
+
+
+    <!--wallet-->
+    <string name="tv_10000">۱۰۰۰۰ تومان</string>
+    <string name="tv_20000">۲۰۰۰۰ تومان</string>
+    <string name="tv_30000">۳۰۰۰۰ تومان</string>
+    <string name="btn_charge">شارژ حساب</string>
+
+    <!--signup-->
+    <string name="et_phone_number">شماره همراه خود را وارد کنید.</string>
+    <string name="bt_confirm_phone">تایید شماره همراه</string>
+    <string name="et_logout">خروج از حساب کاربری.</string>
+
+    <!--verification-->
+    <string name="tv_verificaiton">کد دریافتی از طریق پیامک را برای تایید شماره موبایل وارد نمایید.</string>
+
+
+    //parse
+    <string name="my_parse">myAppId</string>
+    <string name="parse_server">http://88.99.18.190:1337/parse/</string>
+
+
+    <string name="google_maps_api_key">AIzaSyCpfWzyHXlVlFwT0eyZASEPRm505H2S2co</string>
+
+
+    //Toast Messages
+    <string name="log_out_toast">برای سفارش با شماره دیگر لطفا از حساب کاربری خود خارج شوید.</string>
+    <string name="fill_all_fileds">لطفا تمامی فیلدها را پر کنید.</string>
+    <string name="select_from_map">لطفا آدرس خود را از روی نقشه تایید کنید.</string>
+    <string name="profile_toast">اطلاعات ذخیره شد.</string>
+    <string name="toast_fill_address">لطفا آدرس را وارد کنید.</string>
+    <string name="toast_fill_phone">لطفا شماره همراه خود را تایید کنید.</string>
+    <!--finish fragment-->
+    <string name="tv_finish">سفارش شما با موفقبت ثبت شد.</string>
+
+
+    <string name="order_notific_message">برای شما یک سفارش جدید ثبت شده است.</string>
+    <string name="order_status_changed">وضعیت سفارش شما تغییر یافت</string>
+
+
+    <string name="channel_name">Channel name</string>
+
+    <!--my orders fragment-->
+    <string name="my_orders_title">سفارش های من</string>
+
+
+    <!--home fragment-->
+    <string name="tv_your_address">آدرس شما: </string>
+    <string name="tv_your_address_2">هنوز ثبت نام نکرده اید؟</string>
+    <string name="wallet_tv">کیف پول شما:</string>
+
+
+    <!--account info-->
+    <string name="wallet">کیف پول</string>
+    <string name="support">پشتیبانی</string>
+    <string name="rules">قوانین و شرایط استفاده</string>
+    <string name="all_orders">تمامی سفارش ها</string>
+    <string name="logout">خروج از حساب کاربری</string>
+    <string name="colleague">همکاری با مای مولتی</string>
+    <string name="colleague_orders">سفارش های همکاری</string>
+    <string name="tv_call_support">تماس با پشتیبانی</string>
+    <string name="tv_telegram">ارسال پیام از طریق تلگرام</string>
+    <!--map info-->
+    <string name="map_title">لطفا موقعیت خود را انتخاب کنید.</string>
+    <string name="btn_confirm_map">تایید</string>
+
+
+    <!--rules!-->
+    <string name="btn_readed">مطالعه کردم</string>
+    <string name="tv_rules">لطفا قوانین را با دقت مطالعه فرمائید. با سفارش از سایت، شما موافقت خود را با شرایط و قوانین زیر اعلام می‌نمائید. علاوه بر این مفاد، وب وان به عنوان یک وب‌سایت و سرویس ایرانی از تمامی قوانین و مقررات جمهوری اسلامی ایران تبعیت می‌نماید.
+ 1: قبل از ثبت سفارش و پرداخت به دقت قیمت و امکانات را مطالعه فرمائید.
+ 2:ایجاد وبسایت با محتوا و مضامین غیر اخلاقی و سیاسی، ممنوع و خلاف قوانین استفاده می باشد.
+ 3: تمامی وبسایت های ایجاد شده در وب وان به دقت توسط مدیریت سیستم نظارت شده و در صورت مشاهدۀ هرگونه تخلف دسترسی کاربر به سیستم مسدود می‌گردد.
+ 4: مسئولیت تمامی محتوای ایجاد شده در وبسایت ساخته شده بر عهدۀ شخص بوده و وب وان هیچگونه مسئولیتی در قبال محتوای وبسایت شما ندارد.
+ 5:سایت های تحویل داده شده با مشخصات پیشفرض می باشد. خریدار متعهد می گردد که تمامی اطلاعات پیشفرض را به نام خود تغییر دهد . همچنین امکان تغییر نوع وب سایت به نوعی دیگر امکان پذیر نبوده.
+6:ایجاد هرگونه وبسایت نامتعارف شامل هرگونه توهین و فحاشی به افراد (به خصوص سران کشور)، متون سیاسی و غیر اخلاقی، مخل نظم عمومی، مخل امنیی ملی و خلاف عرف ممنوع می‌باشد و به محض مشاهده دسترسی کاربر به سیستم مسدود می شود و وبسایت ایجاد شده از سیستم پرتال حذف می گردد. همچنین تمامی در صورت لزوم به پلیس فتا و مراجع قانونی ارجاع داده خواهد شد.
+7: عضویت شما در سایت شرکت ، بیانگر پذیرش کلیه ضوابط و قوانین سایت بوده و نیاز به امضای کاربر نمی باشد و کاربر متعهد به احترام و رعایت کلیه ضوابط و مقررات می باشد .
+8: امکان انصراف از سفارش و فسخ قرارداد تنها باتوجه به شرایط فسخ قرارداد و یا قبل از امضای قرارداد امکان پذیر خواهد بود.
+    9:هزینه تمدید سالانه معادل 20% هزینه قرارداد با احتساب نرخ تورم سالانه است. در صورتی که ماژول های سفارشی در آینده نیر درخواست داده باشید، 20% هزینه این ماژول ها بعلاوه نرخ تورم نیز لحاظ خواهد شد.لازم به ذکر است تخفیف هایی که در هنگام تمدید بر روی قیمت ها لحاظ شده باشد،جهت تمدید معتبر نخواهند بود.
+10:از فضای هاست فقط برای وب سایت سفارش داده شده می توان استفاده کرد،بدین معنی که شما نمی توانید  جهت  هیچ گونه برنامه یا وب سایت و یا هرگونه عملیات  غیر مرتبط دیگر را از این هاست استفاده کنید.
+11:باتوجه به هسته مشترک و فراهم ساختن قابلیت بروز رسانی خودکار بر روی وب سایت ها، امکان تغییر هاست وب سایت توسط شما وجود ندارد. وب وان همواره از پرقدرتمند ترین سرورها استفاده کرده و تمامی مکانیزم های امنیتی و پشتیبان گیری از وب سایت ها و محتوا ها را به بهترین شکل ممکن انجام می دهد. بنابراین نیاز به تمهیداتی از سمت شما نیست.
+   12: مسئولیت محتوا و خدماتی که بر روی وب سایت خود ارائه می دهید بر عهده شما است، در صورت نوشتن محتوا یا ارائه خدمات یا محصولاتی که خلاف قوانین کشور باشد اطلاعات شما در اختیار مراجع استعلام کننده قرار می گیرد</string>
+
+
+    <!--profile info-->
+    <string name="city">شهر سکونت</string>
+    <string name="gender">جنسیت :</string>
+    <string name="male">آقا</string>
+    <string name="female">خانم</string>
+    <string name="btn_confirm">دخیره اطلاعات</string>
+    <string name="title_profle">ویرایش اطلاعات حساب کاربری</string>
+    <!--profile info-->
+    <string name="title_captain_car">دایرکتوری تعمیرگاه ها</string>
+    <!--all orders-->
+
+    <!--ratingbar info-->
+    <string name="btn_rate">ثبت</string>
+    <string name="hint_comment">نظر شما درباره این سرویس…</string>
+    <string name="titie_rating_bar">به سرویس ارائه شده چند امتیاز می دهید؟</string>
+
+
+    <!--colleague activity-->
+    <string name="cooperation_title1">برای ثبت کسب و کار خود لطفا اطلاعات مورد نیاز را وارد نمایید.</string>
+    <string name="cooperation_select_category">همکاری با:</string>
+    <string name="cooperation_select_sub_category">زیر گروه شغلی خود را انتخاب نمایید:</string>
+
+    <string name="cooperation_hint_phone_num">شماره تماس محل کار</string>
+    <string name="cooperation_hint_jub_title">عنوان کسب و کار جهت نمایش در لیست(نام شرکت,مغازه و …)</string>
+    <string name="cooperation_hint_adress">آدرس</string>
+    <string name="cooperation_hint_desc">توضیحاتی در مورد کار خود ( مثلا قیمت و دستمزد… )</string>
+    <string name="cooprate_already_set">درخواست همکاری شما قبلا ثبت شده است.</string>
+    <string name="sign_up_first">لطفا عضویت خود را تکمیل کنید.</string>
+    <!--filter view-->
+    <string name="filter_title">فیلتر</string>
+    <string name="sorting_title">مرتب سازی بر اساس</string>
+    <string name="filter_nearest">نزدیکترین</string>
+    <string name="filter_cheapest">ارزانترین</string>
+    <string name="btn_filter">اعمال</string>
+    <string name="btn_filter_cancel">حذف فیلترها</string>
+    <string name="switch_copen">دارای کوپن</string>
+    <string name="switch_discount">دارای تخفیف</string>
+    <string name="switch_free_delivery">ارسال رایگان</string>
+
+    <!--start activity-->
+
+    <string name="welcome">به مای مولتی خوش آمدید.</string>
+    <string name="welcome_2e">برای عضویت لطفا شماره همراه خود را وارد نمایید.</string>
+    <string name="guest">ورود به عنوان میهمان</string>
+
+    <string name="bronze_services">خدمات برنزی</string>
+    <string name="silver_services">خدمات نقره ای</string>
+    <string name="gold_services">خدمات طلایی</string>
+    <string name="laundries_directory">دایرکتوری خشکشویی ها</string>
+    <string name="captan_car_directorie">دایرکتوری تعمیرگاه ها </string>
+    <string name="show_on_map">مشاهده روی نقشه</string>
+    <string name="submitRate">ثبت امتیاز</string>
+    <string name="suit">کت و شلوار</string>
+    <string name="special_suit">کت و شلوار خاص</string>
+    <string name="pant_shirt">شلوار، پیراهن</string>
+    <string name="ordinaryCoat">مانتو معمولی</string>
+    <string name="brideDress">لباس عروس</string>
+    <string name="travelBlankets">پتو مسافرتی</string>
+    <string name="singleBlanket">پتو یک نفره</string>
+    <string name="doubleBlanket">پتو دو نفره</string>
+    <string name="singleBedspread">روتختی یک نفره</string>
+    <string name="doubleBedspread">روتختی دو نفره</string>
+    <string name="tourCurtains">پرده تور (هر متر مربع)‬‎</string>
+    <string name="jacket">کاپشن</string>
+    <string name="dyeing">رنگرزی‬‎‬‎</string>
+    <string name="clothesCategories">دسته بندی البسه</string>
+    <string name="clothColor">رنگ لباس</string>
+    <string name="whiteCloth">لباس سفید</string>
+    <string name="washingTemperature">دمای شستشو</string>
+    <string name="celsius">سانتی گراد</string>
+    <string name="fahrenheit">فارنهایت</string>
+    <string name="ourServices">خدمات ما</string>
+    <string name="choose_all">انتخاب همه</string>
+    <string name="ironing">اتو</string>
+    <string name="use_softener">استفاده از نرم کننده</string>
+    <string name="stain_removal">لکه بری</string>
+    <string name="steam_washing">بخارشویی</string>
+    <string name="washing">شستشو</string>
+    <string name="scented_cleaner">استفاده از شوینده معطر</string>
+    <string name="explain_more">توضیحات اضافی</string>
+    <string name="next_step">مرحله بعد</string>
+    <string name="what_day">چه روزی ؟</string>
+    <string name="what_time">چه زمانی ؟</string>
+    <string name="delivery_day">روز تحویل</string>
+    <string name="choose_address_on_map">انتخاب آدرس از روی نقشه</string>
+    <string name="enter_your_address">آدرس خود را وارد نمایید</string>
+    <string name="submit_order">ثبت سفارش</string>
+    <string name="ordinary_mail">پیک معمولی</string>
+    <string name="express_mail">پیک پیشتاز</string>
+    <string name="ordinary_mail_cost">7,000 تومان</string>
+    <string name="express_mail_cost">15,000 تومان</string>
+    <string name="call">تماس</string>
+    <string name="plateNumber">شماره پلاک :</string>
+    <string name="postType">نوع پست :</string>
+    <string name="withColorClothe">لباس رنگی</string>
+    <string name="order">سفارش</string>
+    <string name="send_captain">ارسال به کاپیتان</string>
+    <string name="send_customer">ارسال به مشتری و کاپیتان</string>
+    <string name="my_orders">سفارشات من</string>
+    <string name="choose_location_success_message">انتخاب شد ، برای تغییر دوباره کلیک کنید.</string>
+    <string name="please_choose_delivery_type">لطفا نوع پست را مشخص کنید</string>
+    <string name="extra_cost">هزینه اضافی : </string>
+    <string name="search_your_source">مبدا خود را جستجو کنید</string>
+    <string name="add_source">افزودن مبدا</string>
+    <string name="chooseTransportationVehicle">نوع وسیله نقلیه را انتخاب کنید</string>
+    <string name="truck">وانت</string>
+    <string name="motorcycle">موتور</string>
+    <string name="submit">تایید</string>
+
+</resources>

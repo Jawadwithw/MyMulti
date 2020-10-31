@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="14dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/standard_margin_X2"
+            android:layout_marginEnd="@dimen/standard_margin_X2"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/iv_chooseSource_search"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_search"/>
+
+            <TextView
+                android:layout_toEndOf="@id/iv_chooseSource_search"
+                android:layout_width="match_parent"
+                android:padding="@dimen/standard_margin_X2"
+                android:layout_toStartOf="@id/iv_chooseSource_purplePoint"
+                android:layout_height="wrap_content"
+                android:text="@string/search_your_source"
+                android:textSize="14sp"
+                android:textColor="@color/gray_light"/>
+
+            <ImageView
+                android:id="@+id/iv_chooseSource_purplePoint"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/purple_point"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_chooseSource_nextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="@dimen/standard_margin_X2"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#F3F3F3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_source"
+                android:textColor="@color/captainBikeColorPrimary"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_plus"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
